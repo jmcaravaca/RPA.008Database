@@ -1,0 +1,53 @@
+{
+  "DisplayName": "SelectCustomProgress",
+  "Tooltip": "Get custom item progress in an output string",
+  "HelpLink": null,
+  "Color": null,
+  "OriginalIconFileName": null,
+  "Arguments": [
+    {
+      "Name": "in_ItemId",
+      "DisplayName": "ItemId",
+      "Category": null,
+      "Tooltip": "ID of the item in the \"Main\" Table",
+      "Placeholder": null,
+      "Widget": "Number",
+      "IsRequired": true,
+      "IsPrincipal": true,
+      "DataSourceItems": null
+    },
+    {
+      "Name": "in_Config",
+      "DisplayName": "Config",
+      "Category": null,
+      "Tooltip": "Framework Config dictionary - Keys used: DBConnection\n",
+      "Placeholder": null,
+      "Widget": "Dictionary",
+      "IsRequired": true,
+      "IsPrincipal": true,
+      "DataSourceItems": null
+    },
+    {
+      "Name": "in_ItemDataTable",
+      "DisplayName": "ItemDataTable",
+      "Category": null,
+      "Tooltip": "Name of the SQL Table. Defaults to in_Config(\"ItemDataTable\") If empty",
+      "Placeholder": null,
+      "Widget": "TextComposer",
+      "IsRequired": false,
+      "IsPrincipal": true,
+      "DataSourceItems": null
+    },
+    {
+      "Name": "out_Progress",
+      "DisplayName": "Progress",
+      "Category": null,
+      "Tooltip": "Progress string for the specified item",
+      "Placeholder": null,
+      "Widget": "TextComposer",
+      "IsRequired": true,
+      "IsPrincipal": true,
+      "DataSourceItems": null
+    }
+  ]
+}

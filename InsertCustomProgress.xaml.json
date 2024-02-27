@@ -1,0 +1,64 @@
+{
+  "DisplayName": "InsertCustomProgress",
+  "Tooltip": "Inserts \"Progress\" String into ItemProgress table\n\nin_Config must contain the keys \"DBConnection\" ",
+  "HelpLink": null,
+  "Color": null,
+  "OriginalIconFileName": null,
+  "Arguments": [
+    {
+      "Name": "in_Config",
+      "DisplayName": "Config",
+      "Category": null,
+      "Tooltip": "Framework Config dictionary\n",
+      "Placeholder": null,
+      "Widget": "Dictionary",
+      "IsRequired": true,
+      "IsPrincipal": true,
+      "DataSourceItems": null
+    },
+    {
+      "Name": "in_ItemDataTable",
+      "DisplayName": "ItemDataTable",
+      "Category": null,
+      "Tooltip": "Name of the datatable of the process (\"Main\") datatable",
+      "Placeholder": null,
+      "Widget": "TextComposer",
+      "IsRequired": true,
+      "IsPrincipal": true,
+      "DataSourceItems": null
+    },
+    {
+      "Name": "in_ProcessName",
+      "DisplayName": "ProcessName",
+      "Category": null,
+      "Tooltip": "Process name (should be logF_BusinessProcessname)",
+      "Placeholder": null,
+      "Widget": "TextComposer",
+      "IsRequired": true,
+      "IsPrincipal": true,
+      "DataSourceItems": null
+    },
+    {
+      "Name": "in_Progress",
+      "DisplayName": "Progress",
+      "Category": null,
+      "Tooltip": "Custom string to store progress",
+      "Placeholder": null,
+      "Widget": "TextComposer",
+      "IsRequired": true,
+      "IsPrincipal": true,
+      "DataSourceItems": null
+    },
+    {
+      "Name": "in_ItemId",
+      "DisplayName": "ItemId",
+      "Category": null,
+      "Tooltip": "Id of the Item in ItemDataTable. Available in in_dict_transactiondata",
+      "Placeholder": null,
+      "Widget": "Number",
+      "IsRequired": true,
+      "IsPrincipal": true,
+      "DataSourceItems": null
+    }
+  ]
+}

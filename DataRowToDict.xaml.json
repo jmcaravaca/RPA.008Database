@@ -1,0 +1,31 @@
+{
+  "DisplayName": "DataRowToDict",
+  "Tooltip": "Helper function: Outputs a Dict<String, Object> from a DataRow (keeping the same var types)",
+  "HelpLink": null,
+  "Color": null,
+  "OriginalIconFileName": null,
+  "Arguments": [
+    {
+      "Name": "in_DataRow",
+      "DisplayName": "DataRow",
+      "Category": null,
+      "Tooltip": "Input Datarow",
+      "Placeholder": null,
+      "Widget": null,
+      "IsRequired": false,
+      "IsPrincipal": true,
+      "DataSourceItems": null
+    },
+    {
+      "Name": "out_Dict",
+      "DisplayName": "Dictionary",
+      "Category": null,
+      "Tooltip": "Output Dictionary",
+      "Placeholder": null,
+      "Widget": "Dictionary",
+      "IsRequired": false,
+      "IsPrincipal": true,
+      "DataSourceItems": null
+    }
+  ]
+}

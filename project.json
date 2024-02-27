@@ -1,0 +1,81 @@
+{
+  "name": "RPA.008Database",
+  "projectId": "68003704-df96-417e-8d2c-c19ebde1b21d",
+  "description": " Database related activities",
+  "main": "NewActivity.xaml",
+  "dependencies": {
+    "UiPath.Database.Activities": "1.7.1",
+    "UiPath.System.Activities": "22.10.4"
+  },
+  "webServices": [],
+  "entitiesStores": [],
+  "schemaVersion": "4.0",
+  "studioVersion": "22.10.5.0",
+  "projectVersion": "1.0.0",
+  "runtimeOptions": {
+    "autoDispose": false,
+    "netFrameworkLazyLoading": false,
+    "isPausable": true,
+    "isAttended": false,
+    "requiresUserInteraction": true,
+    "supportsPersistence": false,
+    "workflowSerialization": "DataContract",
+    "excludedLoggedData": [
+      "Private:*",
+      "*password*"
+    ],
+    "executionType": "Workflow",
+    "readyForPiP": false,
+    "startsInPiP": false,
+    "mustRestoreAllDependencies": true,
+    "pipType": "ChildSession"
+  },
+  "designOptions": {
+    "projectProfile": "Developement",
+    "outputType": "Library",
+    "libraryOptions": {
+      "includeOriginalXaml": false,
+      "privateWorkflows": [
+        "_SanitizeSQLCharsUpsert.xaml",
+        "_SanitizeReferenceForSelect.xaml",
+        "DataRowToDict.xaml"
+      ]
+    },
+    "processOptions": {
+      "ignoredFiles": []
+    },
+    "fileInfoCollection": [
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "3c4dc1cd-9549-407a-a720-30526b6e23ac",
+        "testCaseType": "TestCase",
+        "fileName": "TestCaseInsert.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "c94bfa2f-ed72-436e-9e5b-df2f4b07d9cf",
+        "testCaseType": "TestCase",
+        "fileName": "TestCaseUpdate.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "bf104584-c4c9-4cb1-b5d3-135ba54c76cc",
+        "testCaseType": "TestCase",
+        "fileName": "TestCaseInsertProgress.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "9fde2d47-db80-4bc2-a333-329ecf2cde83",
+        "testCaseType": "TestCase",
+        "fileName": "TestCaseSelectProgress.xaml"
+      }
+    ],
+    "modernBehavior": true,
+    "saveToCloud": false
+  },
+  "expressionLanguage": "VisualBasic",
+  "isTemplate": false,
+  "templateProjectData": {},
+  "publishData": {},
+  "targetFramework": "Windows"
+}

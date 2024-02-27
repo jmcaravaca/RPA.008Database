@@ -1,0 +1,64 @@
+{
+  "DisplayName": "InsertItemData",
+  "Tooltip": "Insert  new transaction (ransaction Item Data) in\"Main\" Table\n\nin_Config must contain the keys \"DBConnection\" and \"ItemDataTable\"\nThrows exception if Item was not found",
+  "HelpLink": null,
+  "Color": null,
+  "OriginalIconFileName": null,
+  "Arguments": [
+    {
+      "Name": "in_TransactionItemReference",
+      "DisplayName": "TransactionItemReference",
+      "Category": null,
+      "Tooltip": "Reference of the transactionItem",
+      "Placeholder": null,
+      "Widget": "TextComposer",
+      "IsRequired": true,
+      "IsPrincipal": true,
+      "DataSourceItems": null
+    },
+    {
+      "Name": "in_TransactionItemData",
+      "DisplayName": "TransactionItemData",
+      "Category": null,
+      "Tooltip": "Dict with Transaction Item Data",
+      "Placeholder": null,
+      "Widget": "Dictionary",
+      "IsRequired": true,
+      "IsPrincipal": true,
+      "DataSourceItems": null
+    },
+    {
+      "Name": "in_Config",
+      "DisplayName": "Config",
+      "Category": null,
+      "Tooltip": "Framework Config dictionary\n",
+      "Placeholder": null,
+      "Widget": "Dictionary",
+      "IsRequired": true,
+      "IsPrincipal": true,
+      "DataSourceItems": null
+    },
+    {
+      "Name": "in_ItemDataTable",
+      "DisplayName": "ItemDataTable",
+      "Category": null,
+      "Tooltip": "Name of the SQL Table. Defaults to in_Config(\"ItemDataTable\") If empty",
+      "Placeholder": null,
+      "Widget": "TextComposer",
+      "IsRequired": false,
+      "IsPrincipal": true,
+      "DataSourceItems": null
+    },
+    {
+      "Name": "in_CheckReference",
+      "DisplayName": "CheckReference",
+      "Category": null,
+      "Tooltip": "Check \"Reference\" column for duplicates",
+      "Placeholder": null,
+      "Widget": "Toggle",
+      "IsRequired": true,
+      "IsPrincipal": true,
+      "DataSourceItems": null
+    }
+  ]
+}

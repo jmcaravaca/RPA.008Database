@@ -1,0 +1,79 @@
+{
+  "DisplayName": "GetErrorDetails",
+  "Tooltip": "Select Transaction Item Data from \"Main\" Table\n\nin_Config must contain the keys \"DBConnection\" ",
+  "HelpLink": null,
+  "Color": null,
+  "OriginalIconFileName": null,
+  "Arguments": [
+    {
+      "Name": "out_ErrorCode",
+      "DisplayName": "ErrorCode",
+      "Category": null,
+      "Tooltip": "Error Code",
+      "Placeholder": null,
+      "Widget": "TextComposer",
+      "IsRequired": false,
+      "IsPrincipal": false,
+      "DataSourceItems": null
+    },
+    {
+      "Name": "in_Config",
+      "DisplayName": "Config",
+      "Category": null,
+      "Tooltip": "Framework Config dictionary\n",
+      "Placeholder": null,
+      "Widget": "Dictionary",
+      "IsRequired": true,
+      "IsPrincipal": true,
+      "DataSourceItems": null
+    },
+    {
+      "Name": "in_Exception",
+      "DisplayName": "Exception",
+      "Category": null,
+      "Tooltip": "Exception variable to get the data from",
+      "Placeholder": null,
+      "Widget": null,
+      "IsRequired": true,
+      "IsPrincipal": true,
+      "DataSourceItems": null
+    },
+    {
+      "Name": "out_ErrorMessage",
+      "DisplayName": "ErrorMessage",
+      "Category": null,
+      "Tooltip": "Error Message of the associated error code",
+      "Placeholder": null,
+      "Widget": "TextComposer",
+      "IsRequired": false,
+      "IsPrincipal": true,
+      "DataSourceItems": null
+    },
+    {
+      "Name": "out_ErrorType",
+      "DisplayName": "ErrorType",
+      "Category": null,
+      "Tooltip": "Type of error (Application/Business)",
+      "Placeholder": null,
+      "Widget": "TextComposer",
+      "IsRequired": false,
+      "IsPrincipal": false,
+      "DataSourceItems": null
+    },
+    {
+      "Name": "in_ExceptionLanguage",
+      "DisplayName": "ExceptionLanguage",
+      "Category": null,
+      "Tooltip": "Language of the exception message",
+      "Placeholder": "",
+      "Widget": "Dropdown",
+      "IsRequired": true,
+      "IsPrincipal": true,
+      "DataSourceItems": [
+        "Español",
+        "Portugues",
+        "Ingles"
+      ]
+    }
+  ]
+}
