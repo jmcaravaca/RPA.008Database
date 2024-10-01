@@ -81,6 +81,7 @@
       <AssemblyReference>System.Drawing</AssemblyReference>
       <AssemblyReference>System.Linq</AssemblyReference>
       <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
       <AssemblyReference>System.Private.CoreLib</AssemblyReference>
       <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
       <AssemblyReference>System.Private.Uri</AssemblyReference>
@@ -103,7 +104,7 @@
       <AssemblyReference>WindowsBase</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap2010:Annotation.AnnotationText="Select Transaction Item Data from &quot;Main&quot; Table&#xD;&#xA;&#xD;&#xA;&#xA;in_Config must contain the keys &quot;DBConnection&quot; and &quot;ItemDataTable&quot;&#xA;Throws exception if Item was not found" DisplayName="Select Item Data" sap:VirtualizedContainerService.HintSize="572,1189" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence sap2010:Annotation.AnnotationText="Select Transaction Item Data from &quot;Main&quot; Table&#xA;&#xA;&#xA;in_Config must contain the keys &quot;DBConnection&quot; and &quot;ItemDataTable&quot;&#xA;Throws exception if Item was not found" DisplayName="Select Item Data" sap:VirtualizedContainerService.HintSize="572,1189" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="sd:DataTable" Name="dtData" />
       <Variable x:TypeArguments="x:String" Name="sqlQuery" />
