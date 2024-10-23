@@ -29,7 +29,7 @@
     <x:Null />
   </VisualBasic.Settings>
   <sap2010:Annotation.AnnotationText>UPTF00000174eyI8SGVscExpbms+a19fQmFja2luZ0ZpZWxkIjpudWxsLCI8SW5pdGlhbFRvb2x0aXA+a19fQmFja2luZ0ZpZWxkIjoiSW5zZXJ0ICBuZXcgdHJhbnNhY3Rpb24gKHJhbnNhY3Rpb24gSXRlbSBEYXRhKSBpblwiTWFpblwiIFRhYmxlXG5cbmluX0NvbmZpZyBtdXN0IGNvbnRhaW4gdGhlIGtleXMgXCJEQkNvbm5lY3Rpb25cIiBhbmQgXCJJdGVtRGF0YVRhYmxlXCJcblRocm93cyBleGNlcHRpb24gaWYgSXRlbSB3YXMgbm90IGZvdW5kIiwiPFZlcnNpb24+a19fQmFja2luZ0ZpZWxkIjoxfQ==</sap2010:Annotation.AnnotationText>
-  <sap:VirtualizedContainerService.HintSize>1072,3277.3333333333335</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1216,3236</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>_02010103_CheckErrorCode_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="31">
@@ -114,7 +114,7 @@
       <AssemblyReference>WindowsBase</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap2010:Annotation.AnnotationText="Insert  new transaction (ransaction Item Data) in&quot;Main&quot; Table&#xA;&#xA;in_Config must contain the keys &quot;DBConnection&quot; and &quot;ItemDataTable&quot;&#xA;Throws exception if Item was not found" DisplayName="Insert Item Data" sap:VirtualizedContainerService.HintSize="834.6666666666666,3212.6666666666665" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence sap2010:Annotation.AnnotationText="Insert  new transaction (ransaction Item Data) in&quot;Main&quot; Table&#xA;&#xA;in_Config must contain the keys &quot;DBConnection&quot; and &quot;ItemDataTable&quot;&#xA;Throws exception if Item was not found" DisplayName="Insert Item Data" sap:VirtualizedContainerService.HintSize="835,3171" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="sd:DataTable" Name="dtData" />
       <Variable x:TypeArguments="x:String" Name="colnames" />
@@ -128,15 +128,15 @@
         <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <If Condition="[String.IsNullOrEmpty(in_ItemDataTable)]" DisplayName="If No InputDatatable" sap:VirtualizedContainerService.HintSize="772.6666666666666,356.6666666666667" sap2010:WorkflowViewState.IdRef="If_3">
+    <If Condition="[String.IsNullOrEmpty(in_ItemDataTable)]" DisplayName="If No InputDatatable" sap:VirtualizedContainerService.HintSize="773,352" sap2010:WorkflowViewState.IdRef="If_3">
       <If.Then>
-        <Sequence sap:VirtualizedContainerService.HintSize="476,172.66666666666666" sap2010:WorkflowViewState.IdRef="Sequence_7">
+        <Sequence sap:VirtualizedContainerService.HintSize="476,170" sap2010:WorkflowViewState.IdRef="Sequence_7">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <Assign sap:VirtualizedContainerService.HintSize="434,85.33333333333333" sap2010:WorkflowViewState.IdRef="Assign_10">
+          <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_10">
             <Assign.To>
               <OutArgument x:TypeArguments="x:String">[in_ItemDataTable]</OutArgument>
             </Assign.To>
@@ -156,7 +156,7 @@
         </Sequence>
       </If.Else>
     </If>
-    <If Condition="[in_CheckReference]" DisplayName="If CheckReference" sap:VirtualizedContainerService.HintSize="772.6666666666666,54" sap2010:WorkflowViewState.IdRef="If_4">
+    <If Condition="[in_CheckReference]" DisplayName="If CheckReference" sap:VirtualizedContainerService.HintSize="773,52" sap2010:WorkflowViewState.IdRef="If_4">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -222,7 +222,7 @@
         <Sequence sap2010:WorkflowViewState.IdRef="Sequence_12" />
       </If.Else>
     </If>
-    <Assign DisplayName="Add &quot;Reference&quot; to tData" sap:VirtualizedContainerService.HintSize="772.6666666666666,85.33333333333333" sap2010:WorkflowViewState.IdRef="Assign_5">
+    <Assign DisplayName="Add &quot;Reference&quot; to tData" sap:VirtualizedContainerService.HintSize="773,82" sap2010:WorkflowViewState.IdRef="Assign_5">
       <Assign.To>
         <OutArgument x:TypeArguments="x:Object">[in_transactionItemData("Reference")]</OutArgument>
       </Assign.To>
@@ -230,25 +230,25 @@
         <InArgument x:TypeArguments="x:Object">[in_TransactionItemReference]</InArgument>
       </Assign.Value>
     </Assign>
-    <Sequence DisplayName="Calculate Query" sap:VirtualizedContainerService.HintSize="772.6666666666666,1461.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_3">
+    <Sequence DisplayName="Calculate Query" sap:VirtualizedContainerService.HintSize="773,1440" sap2010:WorkflowViewState.IdRef="Sequence_3">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <ui:ForEach x:TypeArguments="scg:KeyValuePair(x:String, x:Object)" CurrentIndex="{x:Null}" DisplayName="For Each kvPair - Get the strings for the query" sap:VirtualizedContainerService.HintSize="710.6666666666666,1350.6666666666667" sap2010:WorkflowViewState.IdRef="ForEach`1_5" Values="[in_TransactionItemData]">
+      <ui:ForEach x:TypeArguments="scg:KeyValuePair(x:String, x:Object)" CurrentIndex="{x:Null}" DisplayName="For Each kvPair - Get the strings for the query" sap:VirtualizedContainerService.HintSize="710,1329" sap2010:WorkflowViewState.IdRef="ForEach`1_5" Values="[in_TransactionItemData]">
         <ui:ForEach.Body>
           <ActivityAction x:TypeArguments="scg:KeyValuePair(x:String, x:Object)">
             <ActivityAction.Argument>
               <DelegateInArgument x:TypeArguments="scg:KeyValuePair(x:String, x:Object)" Name="currentItem" />
             </ActivityAction.Argument>
-            <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="674,1221.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="674,1203" sap2010:WorkflowViewState.IdRef="Sequence_2">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <Assign DisplayName="Assign ColNames" sap:VirtualizedContainerService.HintSize="612,85.33333333333333" sap2010:WorkflowViewState.IdRef="Assign_2">
+              <Assign DisplayName="Assign ColNames" sap:VirtualizedContainerService.HintSize="612,82" sap2010:WorkflowViewState.IdRef="Assign_2">
                 <Assign.To>
                   <OutArgument x:TypeArguments="x:String">[colnames]</OutArgument>
                 </Assign.To>
@@ -256,15 +256,15 @@
                   <InArgument x:TypeArguments="x:String">[String.Format("{0}, [{1}]", colnames, currentItem.Key)]</InArgument>
                 </Assign.Value>
               </Assign>
-              <If Condition="[currentItem.Value is Nothing]" DisplayName="If CurrentItem is null" sap:VirtualizedContainerService.HintSize="612,985.3333333333334" sap2010:WorkflowViewState.IdRef="If_5">
+              <If Condition="[currentItem.Value is Nothing]" DisplayName="If CurrentItem is null" sap:VirtualizedContainerService.HintSize="612,970" sap2010:WorkflowViewState.IdRef="If_5">
                 <If.Then>
-                  <Sequence sap:VirtualizedContainerService.HintSize="476,172.66666666666666" sap2010:WorkflowViewState.IdRef="Sequence_13">
+                  <Sequence sap:VirtualizedContainerService.HintSize="476,170" sap2010:WorkflowViewState.IdRef="Sequence_13">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <Assign DisplayName="Assign Values" sap:VirtualizedContainerService.HintSize="434,85.33333333333333" sap2010:WorkflowViewState.IdRef="Assign_11">
+                    <Assign DisplayName="Assign Values" sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_11">
                       <Assign.To>
                         <OutArgument x:TypeArguments="x:String">[values]</OutArgument>
                       </Assign.To>
@@ -275,13 +275,13 @@
                   </Sequence>
                 </If.Then>
                 <If.Else>
-                  <Sequence sap:VirtualizedContainerService.HintSize="578,628.6666666666666" sap2010:WorkflowViewState.IdRef="Sequence_14">
+                  <Sequence sap:VirtualizedContainerService.HintSize="578,618" sap2010:WorkflowViewState.IdRef="Sequence_14">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <Switch x:TypeArguments="x:String" sap2010:Annotation.AnnotationText="TODO Other object types" DisplayName="Switch Object Type" Expression="[currentItem.value.GetType().ToString]" sap:VirtualizedContainerService.HintSize="536,541.3333333333334" sap2010:WorkflowViewState.IdRef="Switch`1_2">
+                    <Switch x:TypeArguments="x:String" sap2010:Annotation.AnnotationText="TODO Other object types" DisplayName="Switch Object Type" Expression="[currentItem.value.GetType().ToString]" sap:VirtualizedContainerService.HintSize="536,530" sap2010:WorkflowViewState.IdRef="Switch`1_2">
                       <Switch.Default>
                         <Sequence sap:VirtualizedContainerService.HintSize="496,351.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_10">
                           <Sequence.Variables>
@@ -313,7 +313,7 @@
                           <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
-                      <Sequence x:Key="System.DateTime" sap:VirtualizedContainerService.HintSize="496,321.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_15">
+                      <Sequence x:Key="System.DateTime" sap:VirtualizedContainerService.HintSize="496,315" sap2010:WorkflowViewState.IdRef="Sequence_15">
                         <Sequence.Variables>
                           <Variable x:TypeArguments="x:String" Name="valueToInsert" />
                         </Sequence.Variables>
@@ -322,15 +322,15 @@
                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
-                        <Assign sap:VirtualizedContainerService.HintSize="434,85.33333333333333" sap2010:WorkflowViewState.IdRef="Assign_13">
+                        <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_13">
                           <Assign.To>
                             <OutArgument x:TypeArguments="x:String">[valueToInsert]</OutArgument>
                           </Assign.To>
                           <Assign.Value>
-                            <InArgument x:TypeArguments="x:String">[CType(currentItem.Value, DateTime).ToString("yyyyMMdd hh:mm:ss")]</InArgument>
+                            <InArgument x:TypeArguments="x:String">[CType(currentItem.Value, DateTime).ToString("yyyyMMdd HH:mm:ss")]</InArgument>
                           </Assign.Value>
                         </Assign>
-                        <Assign DisplayName="Assign Values" sap:VirtualizedContainerService.HintSize="434,85.33333333333333" sap2010:WorkflowViewState.IdRef="Assign_12">
+                        <Assign DisplayName="Assign Values" sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_12">
                           <Assign.To>
                             <OutArgument x:TypeArguments="x:String">[values]</OutArgument>
                           </Assign.To>
@@ -348,7 +348,7 @@
         </ui:ForEach.Body>
       </ui:ForEach>
     </Sequence>
-    <Assign DisplayName="Assign Trim , from Query" sap:VirtualizedContainerService.HintSize="772.6666666666666,85.33333333333333" sap2010:WorkflowViewState.IdRef="Assign_6">
+    <Assign DisplayName="Assign Trim , from Query" sap:VirtualizedContainerService.HintSize="773,82" sap2010:WorkflowViewState.IdRef="Assign_6">
       <Assign.To>
         <OutArgument x:TypeArguments="x:String">[colnames]</OutArgument>
       </Assign.To>

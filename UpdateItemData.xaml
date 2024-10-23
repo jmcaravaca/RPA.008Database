@@ -246,7 +246,7 @@
                                   <OutArgument x:TypeArguments="x:String">[valueToUpdate]</OutArgument>
                                 </Assign.To>
                                 <Assign.Value>
-                                  <InArgument x:TypeArguments="x:String">[CType(currentItem.Value, DateTime).ToString("yyyyMMdd hh:mm:ss")]</InArgument>
+                                  <InArgument x:TypeArguments="x:String">[CType(currentItem.Value, DateTime).ToString("yyyyMMdd HH:mm:ss")]</InArgument>
                                 </Assign.Value>
                               </Assign>
                               <Assign DisplayName="Assign Values" sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_13">
